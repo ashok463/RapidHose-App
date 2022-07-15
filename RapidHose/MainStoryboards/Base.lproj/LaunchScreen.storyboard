@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundimage" translatesAutoresizingMaskIntoConstraints="NO" id="dso-0j-s0G">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="tOX-cb-PCR">
+                                <rect key="frame" x="41.5" y="313.5" width="331" height="269"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="YmF-Dj-ScH">
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="al3-RM-kYh">
+                                <rect key="frame" x="60" y="353" width="294" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="kNK-Rl-muT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2020 Rapid Hose LLC" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnk-S2-2nH">
+                                <rect key="frame" x="72" y="781" width="270.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tWB-Hw-egp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tOX-cb-PCR" firstAttribute="height" secondItem="dso-0j-s0G" secondAttribute="height" multiplier="0.3" id="2Y1-FV-Dr6"/>
+                            <constraint firstItem="al3-RM-kYh" firstAttribute="centerX" secondItem="YmF-Dj-ScH" secondAttribute="centerX" id="2kh-dZ-usX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YmF-Dj-ScH" secondAttribute="trailing" constant="10" id="5u8-R5-Kdf"/>
+                            <constraint firstItem="al3-RM-kYh" firstAttribute="leading" secondItem="YmF-Dj-ScH" secondAttribute="leading" constant="50" id="KXC-AG-zo4"/>
+                            <constraint firstItem="tOX-cb-PCR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Mxe-al-Xv8"/>
+                            <constraint firstItem="al3-RM-kYh" firstAttribute="centerY" secondItem="YmF-Dj-ScH" secondAttribute="centerY" id="OZN-cn-yul"/>
+                            <constraint firstItem="dso-0j-s0G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TMt-U6-tTL"/>
+                            <constraint firstItem="dso-0j-s0G" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-44" id="atG-60-sXD"/>
+                            <constraint firstItem="dso-0j-s0G" firstAttribute="centerY" secondItem="tOX-cb-PCR" secondAttribute="centerY" id="bf8-5o-IF7"/>
+                            <constraint firstItem="dso-0j-s0G" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gJW-fR-rug"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YmF-Dj-ScH" secondAttribute="bottom" constant="10" id="mAg-0a-Rvm"/>
+                            <constraint firstItem="Hnk-S2-2nH" firstAttribute="bottom" secondItem="YmF-Dj-ScH" secondAttribute="bottom" constant="-50" id="pPp-bJ-OWM"/>
+                            <constraint firstItem="tOX-cb-PCR" firstAttribute="width" secondItem="dso-0j-s0G" secondAttribute="width" multiplier="0.8" id="rkS-X0-G4C"/>
+                            <constraint firstItem="YmF-Dj-ScH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="sgN-Bo-y7a"/>
+                            <constraint firstItem="dso-0j-s0G" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sou-oI-0cr"/>
+                            <constraint firstItem="Hnk-S2-2nH" firstAttribute="centerX" secondItem="al3-RM-kYh" secondAttribute="centerX" id="vlQ-Tq-oUG"/>
+                            <constraint firstItem="YmF-Dj-ScH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="wco-2q-60l"/>
+                            <constraint firstItem="al3-RM-kYh" firstAttribute="trailing" secondItem="YmF-Dj-ScH" secondAttribute="trailing" constant="-50" id="yot-f5-HGs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.507246376811594" y="233.70535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppLogo" width="200" height="150"/>
+        <image name="backgroundimage" width="414" height="896"/>
+        <image name="splashLogo" width="1024" height="2206"/>
+    </resources>
+</document>
